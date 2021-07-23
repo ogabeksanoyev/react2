@@ -1,0 +1,28 @@
+
+.form-control{
+   border-top-left-radius: 0.25rem;
+   border-bottom-left-radius:.25rem;
+   border-top-right-radius: 0;
+   border-bottom-right-radius:0;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.inputs{
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+.inputs a{
+    background: linear-gradient(279.37deg,#008ae4,#a6dcff 158.68%);
+    color: white;
+    border-top-right-radius: 0.25rem;
+    border-bottom-right-radius:.25rem ;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .3s ease;
+}
+.inputs a:focus{
+    box-shadow: 0 0 0 2px #008ae4;
+}

@@ -1,0 +1,122 @@
+
+header{
+  background: white;
+    position: relative;
+    border-bottom: 2px solid #006dda;
+    justify-content: space-between !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99999;
+  }
+  header.sticky{
+    padding: .5rem 0 !important;
+    border-bottom: 2px solid #333;
+    transition: all 0.3s ease;
+  }
+  header .logo{
+    width: 40px;
+    animation-name:App-logo-spin;
+    animation-iteration-count: infinite;
+   animation-duration: 12s;
+  }
+  header .logo img{
+    width: 100%;
+  }
+  .header_ul ul li a{
+    color:#666;
+    font-weight: 500;
+    font-size: 12px;
+    position: relative;
+    
+  }
+  .header_ul ul li a:hover{
+    color: #333;
+  }
+  .header_ul ul li a::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #333;
+    left: 0;
+    right: 0;
+    bottom: -3px;
+    transition: all .3s ease;
+    transform: translateY(10px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  .header_ul ul li a:hover::before{
+  transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  }
+  header .menu_btn{
+    border-radius: 5px;
+    padding: 5px;
+    transition: color .15s linear,background-color .15s linear,transform .15s ease-out;
+      cursor: pointer;
+      border: 0;
+      background-color: transparent;
+      font-family: inherit;
+      position: relative;
+      text-align: center;
+  }
+  .menu_btn:active img{
+    transform: scale(.94);
+  }
+  .menu_btn:hover{
+   background: rgba(0,138,228,0.15);
+  }
+  .btnx{
+    z-index: 999999;
+  }
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .shopp img{
+    width: 25px;
+  }
+  
+  @media (max-width:768px){
+header .header_ul{
+      width: 0px;
+      height: 100vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #e7eef5;
+      display: none !important;  
+     
+}
+header .header_ul.active{
+  display: block !important;  
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 100vh;
+  transform: translateX(0);
+background: #e7eef5;
+transition:  width 2s ease;
+}
+    header .header_ul .nav{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      height: 100%;
+      
+    }
+    .header_ul .nav li{
+      margin-bottom: 15px !important;
+    }
+  }
